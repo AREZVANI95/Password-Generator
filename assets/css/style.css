@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.wrapper {
+    padding: 30px 20px 0px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    color: darkblue;
+}
+
+.box {}
