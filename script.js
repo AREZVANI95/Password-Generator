@@ -37,3 +37,33 @@ function characterTypes() {
         characterTypes()
     };
 }
+
+var generateBtn = document.querySelector("#generate");
+
+function writePassword() {
+  var text = '';
+  function questions() {
+    var passwordLength = prompt("How long would you like your password to be? Please choose a number between 8 characters to 128 characters.");
+    if (parseInt(passwordLength) >= 8 && parseInt(passwordLength) <= 128) {
+      characterTypes()
+      
+      for (let i = 0; i < passwordLength; i++) {
+        let x = passString[Math.floor(Math.random() * passString.length)]
+        passResult += x;
+      }
+      console.log(passResult);
+      console.log(textArea);
+      text = document.createTextNode(passResult);
+      textArea.innerHTML = '';
+      textArea.appendChild(text);
+      passResult = '';
+
+    };
+
+  }
+  questions()
+}
+
+generateBtn.addEventListener("click", () => {
+    writePassword();
+  });
