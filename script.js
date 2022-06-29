@@ -4,7 +4,7 @@ var passwordNumeric = "";
 var passwordSpecial = "";
 var capital = "ABCDEFGHIJKLMNOPQURSTUVWXYZ"
 var lower = "abcdefghijklmnopqrstuvwxyz"
-var numeric = "numeric"
+var numeric = "0123456789"
 var special = "!@#$%^&*()_+-=[]{},./?";
 var passString = "";
 var passResult = "";
