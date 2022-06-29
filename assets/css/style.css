@@ -1,10 +1,13 @@
+/*------------ROOT------------*/
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 
 }
+/*------------ROOT_END------------*/
 
+/*------------BODY------------*/
 html,
 body,
 .wrapper {
@@ -27,7 +30,9 @@ header {
     padding: 0px 20px 20px 20px;
     color: darkblue;
 }
+/*------------BODY_END------------*/
 
+/*------------BOX_LAYOUT------------*/
 .box {
     background-color: white;
     border-radius: 5px;
@@ -61,3 +66,49 @@ header {
     display: block;
     clear: both;
 }
+/*------------BOX_LAYOUT_END------------*/
+
+/*------------BUTTON_STYLE------------*/
+
+.btn {
+    border: none;
+    background-color: red;
+    border-radius: 30px;
+    box-shadow: black;
+    color: white;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: default;
+    background: white;
+}
+/*------------BUTTON_STYLE_END------------*/
+
+/*------------PASSWORD_STYLE------------*/
+
+.float-right {
+    float: right;
+}
+
+#password {
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 15px 15px 15px 85px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    border: 2px dashed gray;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+}
+/*------------PASSWORD_STYLE_END------------*/
