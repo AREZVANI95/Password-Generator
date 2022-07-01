@@ -28,13 +28,16 @@ function writePassword() {
 
 // Asks the user to choose the options given to build their random password.
 function generatePassword() {
-  var passUppercase = confirm("Add Uppercase characters to your password?");
-  var passLowercase = confirm("Add Lowercase characters to your password?");
-  var passNumerical = confirm("Add Numbers to your password?");
-  var passSpecialcharacters = confirm("Add Special characters to your password?");
-  console.log("prompts loaded properly");
+  var passUppercase = confirm("Add Uppercase characters to your Generated password?");
+  var passLowercase = confirm("Add Lowercase characters to your Generated password?");
+  var passNumerical = confirm("Add Numbers to your Generated password?");
+  var passSpecialcharacters = confirm("Add Special characters to your Generated password?");
+  console.log("Modifiers have been chosen");
   // This will confirm and pass the chosen variables picked by the user to the passString
-  if (upper === true || lower === true || numb === true || special === true) {
+  if (upper === true ||
+    lower === true ||
+    numb === true ||
+    special === true) {
 
     if (passUppercase === true) {
       passtring += upper
@@ -52,6 +55,15 @@ function generatePassword() {
       passtring += special
     }
 
+  }
+
+  // This will make sure the user chooses at least one of the modifiers provided
+  if (passUppercase != true &&
+    passLowercase != true &&
+    passNumerical != true &&
+    passSpecialcharacters != true) {
+    alert("Please Select one of these modifiers.");
+    generatePassword()
   }
 
 }
