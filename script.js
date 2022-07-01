@@ -1,5 +1,11 @@
 // Assignment code here
 
+//Variables for each options the user will choose from. //
+var passUppercase = "";
+var passLowercase = "";
+var passNumerical = "";
+var passSpecialcharacters = "";
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
