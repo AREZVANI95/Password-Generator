@@ -6,6 +6,12 @@ var passLowercase = "";
 var passNumerical = "";
 var passSpecialcharacters = "";
 
+// Assigning each variable with their corresponding content //
+var upper = "ABCDEFGHIJKLMNOPQURSTUVWXYZ"
+var lower = "abcdefghijklmnopqrstuvwxyz"
+var num = "1234567890"
+var capital = "!@#$%^&*()_+-=[]{},./?"
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
