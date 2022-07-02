@@ -21,7 +21,41 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  var get = '';
+  //Code for acquiring the size of the password the user decided to go with.
+  function getPassword() {
+    var passLength = prompt("Choose the size of your password. (8-128 characters)");
+    if (parseInt(passLength) >= 8 && parseInt(passLength) <= 128) {
+      generatePassword()
+
+      //grabs the length of the password and the string which modifiers were added depending on the users choice.
+      for (let i = 0; i < passLength; i++) {
+        let x = passString[Math.floor(Math.random() * passString.length)]
+        passResult += x;
+      }
+
+      //pass the result to the user.
+      get = document.createTextNode(passResult);
+
+      //Lets you keep generating new passwords after the first 
+      passwordText.innerHTML = '';
+      passwordText.appendChild(get);
+      passResult = '';
+    };
+
+    // This will make sure the user chooses a size between 8 - 128
+    if (passLength <= 7 || passLength >= 129) {
+      alert("please choose a size between 8-128.");
+      generatePassword()
+
+    } else {
+      alert("Password Generating");
+    }
+  }
+  getPassword()
 }
+
+// Will display the password to the user.
 var passwordText = document.querySelector("#password");
 
 // Asks the user to choose the options given to build their random password.
