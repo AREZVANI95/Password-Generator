@@ -16,7 +16,7 @@ This application is a work in-progress, updating and submitting what I currently
 Updated Application(x3). This Application lets you generate a random password incorporating the 4 elements of Upper, Lower, Numerical, and Special characters. instead of getting a subscription to a random password generator you can use one for free like this one. 
 
 ## Static Site:
-![Displaying-Code](/public/images/Coming_soon.png)
+![Displaying-Code](/assets/img/Static_Site.PNG)
 
 ## Deployment Link:
 [Password-Generator](https://arezvani95.github.io/Password-Generator/)
