@@ -32,6 +32,9 @@ function generatePassword() {
     var lowerCaseConfirm = confirm('Confirm to add lowercase characters to password'); // Prompts user for lowercase confirmation.
     var specialCaseConfirm = confirm('Confirm to add special characters to password'); // Prompts user for special character confirmation.
     var numbCaseConfirm = confirm('Confirm to add number characters to password'); // Prompts user for number confirmation.
+  } //Prompts user to select one of the four options to better randomize password.
+  if (!upperCaseConfirm && !lowerCaseConfirm && !specialCaseConfirm && !numbCaseConfirm) {
+    alert("One type of character must be chosen.")
   }
 
   return newGeneratedPassword
